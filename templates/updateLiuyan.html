@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>修改留言页面</h1>
+<form action="DealNotebookController.php?flag=updatenotebook&id=<{$arr->getId()}>" method="post">
+名字：<input type="text" name="name" size="30" value="<{$arr->getName()}>" /><br />
+标题：<input type="text" name="title" size="30" value="<{$arr->getTitle()}>" /><br />
+内容：<textarea name="content" cols="70" rows="10"><{$arr->getContent()}></textarea><br />
+时间：<input type="text" name="time"  size="30" value="<{$arr->getTime()}>"/><br />
+<input type="submit" value="发布留言" /><input type="reset" value="重置" />
+</form>
+</body>
+</html>
